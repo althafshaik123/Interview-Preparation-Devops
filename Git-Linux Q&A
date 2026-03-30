@@ -1,0 +1,76 @@
+# Git, Linux, Interview Questions and Answers (0-5 Years Experience)
+
+## 1. What is Git?
+Git is a distributed version control system used to track changes in source code and collaborate on software development.
+
+## 2. What is the difference between `git clone` and `git fork`?
+`git clone` copies a repository to your local machine, while `git fork` creates your own copy of a repository on a hosting service like GitHub.
+
+## 3. What does `git add` do?
+`git add` stages file changes so they are included in the next commit.
+
+## 4. What is a commit in Git?
+A commit is a snapshot of staged changes saved to the repository history with a message describing the update.
+
+## 5. What does `git pull` do?
+`git pull` fetches changes from a remote repository and merges them into the current local branch.
+
+## 6. What is the difference between `git merge` and `git rebase`?
+`git merge` combines two branches with a merge commit, while `git rebase` rewrites commits from one branch onto another for a linear history.
+
+## 7. How do you create a new branch in Git?
+Use `git branch <branch-name>` or `git checkout -b <branch-name>` to create a new branch.
+
+## 8. What is `git stash` used for?
+`git stash` temporarily saves uncommitted changes so you can switch branches without committing them.
+
+## 9. What is the Linux file system hierarchy?
+The Linux file system hierarchy includes `/` root, `/bin`, `/etc`, `/usr`, `/var`, `/home`, `/tmp`, and `/proc`.
+
+## 10. How do you list files in a directory?
+Use `ls` to list files and directories, and `ls -la` to include hidden files and details.
+
+## 11. How do you change directories in Linux?
+Use `cd <directory>` to change directories and `pwd` to print the current working directory.
+
+## 12. What command shows disk usage?
+Use `df -h` for filesystem disk usage and `du -sh <path>` for the size of a directory.
+
+## 13. How do you check running processes?
+Use `ps aux`, `top`, or `htop` to review running processes and resource usage.
+
+## 14. How do you change file permissions?
+Use `chmod` with numeric or symbolic modes, for example `chmod 755 file.sh`.
+
+## 15. What does `chmod 755` mean?
+It gives the owner read/write/execute permissions and group and others read/execute permissions.
+
+## 16. How do you change file ownership?
+Use `chown user:group <file>` to change the owner and group of a file.
+
+## 17. What is a shell script?
+A shell script is a text file containing Bash commands that can be executed as a script.
+
+## 18. How do you make a script executable?
+Use `chmod +x script.sh` and run it with `./script.sh`.
+
+## 19. What does `#!/bin/bash` do?
+It specifies the interpreter for the script, telling the system to execute it with Bash.
+
+## 20. How do you create a variable in Bash?
+Use `NAME=value` and reference it with `$NAME`.
+
+## 21. What is a Bash loop?
+A Bash loop repeats commands, such as `for item in list; do ...; done` or `while [ condition ]; do ...; done`.
+
+## 22. What is a conditional statement in Bash?
+A conditional uses `if [ condition ]; then ...; elif ...; else ...; fi` to execute commands based on tests.
+
+## 23. How do you search text in files?
+Use `grep 'pattern' filename` to search for text inside files.
+
+## 24. What is `sudo` used for?
+`sudo` runs commands with elevated privileges as the superuser or another user.
+
+## 25. What are some best practices for Git, Linux, and Bash?
+Best practices include committing small logical changes, using branches, keeping repositories clean, checking file permissions, using descriptive commands, writing readable shell scripts, and testing scripts before deployment.
