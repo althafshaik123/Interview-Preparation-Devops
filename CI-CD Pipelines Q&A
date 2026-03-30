@@ -1,0 +1,78 @@
+# CI/CD Interview Questions and Answers (0-5 Years Experience)
+
+This file contains 25 real-world CI/CD interview questions and answers for candidates with 0-5 years of experience.
+
+## 1. What is CI/CD?
+CI/CD stands for Continuous Integration and Continuous Delivery/Deployment. It is a set of practices that automate building, testing, and delivering software.
+
+## 2. What is Continuous Integration?
+Continuous Integration is the practice of merging code changes frequently into a shared repository and automatically building and testing them.
+
+## 3. What is Continuous Delivery?
+Continuous Delivery is the practice of keeping code ready to deploy to production at any time by automating the release process up to a staging environment.
+
+## 4. What is Continuous Deployment?
+Continuous Deployment extends Continuous Delivery by automatically deploying every successful change to production without manual intervention.
+
+## 5. Why is CI/CD important for DevOps?
+CI/CD reduces manual errors, speeds up feedback loops, improves software quality, and enables teams to deliver changes safely and reliably.
+
+## 6. What are pipelines in CI/CD?
+Pipelines define the sequence of automated stages and steps that run during build, test, and deployment processes.
+
+## 7. What is a build stage?
+A build stage compiles code, installs dependencies, and creates an artifact such as a binary, container image, or package.
+
+## 8. What is a test stage?
+A test stage runs automated tests like unit, integration, and acceptance tests to validate the quality of the code.
+
+## 9. What is a deployment stage?
+A deployment stage deploys the build artifact to environments like development, staging, or production.
+
+## 10. What is version control and why is it used in CI/CD?
+Version control systems like Git manage source code history and enable automated pipelines to trigger on code changes.
+
+## 11. What is a trigger in a CI/CD pipeline?
+A trigger automatically starts a pipeline when specific events occur, such as code commits, pull requests, or scheduled times.
+
+## 12. What is a pipeline artifact?
+An artifact is a build output such as a compiled application, container image, or package that can be passed between pipeline stages.
+
+## 13. What is pipeline as code?
+Pipeline as code stores pipeline definitions in version-controlled files, making pipelines reproducible, reviewable, and maintainable.
+
+## 14. What are common CI/CD tools?
+Common tools include Jenkins, GitHub Actions, GitLab CI/CD, Azure Pipelines, CircleCI, Travis CI, and Bamboo.
+
+## 15. What is a runner or agent?
+A runner or agent is a worker machine that executes pipeline jobs, either hosted by the CI/CD service or self-managed.
+
+## 16. How do you handle secrets in CI/CD pipelines?
+Handle secrets by using secret stores, environment variables marked secret, vault integrations, and avoiding hardcoding credentials.
+
+## 17. What is artifact repository in CI/CD?
+An artifact repository stores build artifacts such as binaries, Docker images, and packages for reuse and deployment.
+
+## 18. What is blue-green deployment?
+Blue-green deployment is a release strategy that runs two identical environments and switches traffic from the old environment to the new one.
+
+## 19. What is canary deployment?
+Canary deployment gradually rolls out changes to a small subset of users before deploying to the full production environment.
+
+## 20. What is rollback in CI/CD?
+Rollback is the process of returning to a previous stable version when a deployment or release causes issues.
+
+## 21. Why are automated tests important in CI/CD?
+Automated tests catch regressions early and ensure code changes do not break functionality, providing confidence before deployment.
+
+## 22. What is environment promotion?
+Environment promotion moves artifacts through stages such as dev, test, staging, and production while preserving the same tested artifact.
+
+## 23. What is a merge request or pull request workflow in CI/CD?
+A pull request workflow allows code review and validation before changes are merged, often triggering CI checks and quality gates.
+
+## 24. What is the difference between build pipeline and release pipeline?
+A build pipeline creates artifacts from source code, while a release pipeline deploys those artifacts to target environments.
+
+## 25. What are some CI/CD best practices?
+Best practices include using version control, automating tests, keeping pipelines fast, using pipeline as code, securing secrets, monitoring pipeline runs, and deploying small, frequent changes.
