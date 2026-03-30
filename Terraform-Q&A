@@ -1,0 +1,78 @@
+# Terraform Interview Questions and Answers (0-5 Years Experience)
+
+This file contains 25 real-world Terraform interview questions and answers for candidates with 0-5 years of experience.
+
+## 1. What is Terraform?
+Terraform is an open-source infrastructure-as-code tool by HashiCorp that lets you define, provision, and manage infrastructure resources across cloud providers using declarative configuration files.
+
+## 2. What is a Terraform provider?
+A provider is a plugin that defines resources and data sources for a specific platform, such as AWS, Azure, or Google Cloud. Providers allow Terraform to interact with APIs and create infrastructure.
+
+## 3. What is Terraform state?
+Terraform state is a JSON file that stores the current mapping between configuration resources and real infrastructure. It tracks metadata, resource IDs, and helps Terraform determine what changes to apply.
+
+## 4. Why is state important in Terraform?
+State is important because it enables Terraform to perform incremental updates, understand resource dependencies, and reconcile the configuration with existing infrastructure.
+
+## 5. What are `.tf` and `.tfvars` files?
+`.tf` files contain Terraform configuration code (resources, providers, variables). `.tfvars` files store values for variables, making it easier to separate configuration from environment-specific settings.
+
+## 6. What does `terraform init` do?
+`terraform init` initializes a working directory by downloading provider plugins, setting up backends, and preparing the directory to use Terraform.
+
+## 7. What is the purpose of `terraform plan`?
+`terraform plan` previews the actions Terraform will take to reach the desired state. It compares the current state, configuration, and provider data to generate an execution plan.
+
+## 8. How does `terraform apply` work?
+`terraform apply` executes the plan by creating, updating, or deleting resources to match the desired configuration. It updates state after the changes succeed.
+
+## 9. What is a Terraform module?
+A module is a reusable group of Terraform configuration files. It encapsulates resources, variables, outputs, and can be shared across projects to enforce best practices.
+
+## 10. What is the difference between a root module and a child module?
+The root module is the working directory where Terraform is run. Child modules are reusable configurations called from the root module using the `module` block.
+
+## 11. What are Terraform variables?
+Variables are input parameters that make configuration flexible. They can be defined with `variable` blocks and supplied via `.tfvars`, environment variables, CLI flags, or default values.
+
+## 12. What are outputs in Terraform?
+Outputs expose values from a Terraform configuration after apply. They are useful for passing data between modules or showing information such as IP addresses and resource IDs.
+
+## 13. What is a backend in Terraform?
+A backend configures where Terraform stores its state. Backends can be local or remote (such as S3, Azure Blob, or Terraform Cloud) and may support state locking.
+
+## 14. Why use remote state?
+Remote state enables collaboration by sharing state across teams, preventing state file conflicts, and often providing locking, encryption, and versioning.
+
+## 15. What is state locking and why is it useful?
+State locking prevents concurrent Terraform runs from modifying the same state at the same time. It protects against corruption and conflicting updates.
+
+## 16. What is a data source in Terraform?
+A data source reads information from an external provider without creating it. Data sources are used when you need existing resource metadata or IDs inside your configuration.
+
+## 17. What are `count` and `for_each`?
+`count` and `for_each` are meta-arguments that create multiple resource instances from a single block. `count` uses numeric index repetition, while `for_each` works with maps or sets.
+
+## 18. What is the `depends_on` argument?
+`depends_on` explicitly sets a resource dependency when Terraform cannot infer it automatically. It forces resource creation order or deletion order.
+
+## 19. When should you use `lifecycle` blocks?
+Use `lifecycle` blocks to configure resource behavior such as `create_before_destroy`, `prevent_destroy`, or `ignore_changes` for managing updates safely.
+
+## 20. What is `terraform import` used for?
+`terraform import` brings existing infrastructure under Terraform management by mapping a real resource to a Terraform resource address in the state.
+
+## 21. How do you handle secrets in Terraform?
+Handle secrets by using environment variables, remote backends, `sensitive = true`, and secret managers instead of hardcoding credentials in `.tf` files or state.
+
+## 22. What are workspaces in Terraform?
+Workspaces let you maintain multiple state instances from the same configuration. They are useful for separate environments like `dev`, `staging`, and `prod`.
+
+## 23. What is Terraform Cloud or Terraform Enterprise?
+Terraform Cloud/Enterprise is a hosted service for remote state, workspace management, policy enforcement, and automation. It provides collaboration, run execution, and governance features.
+
+## 24. How do you detect drift in Terraform?
+Detect drift by running `terraform plan` or `terraform refresh` to compare real infrastructure with the stored state and configuration. Any differences indicate drift.
+
+## 25. What are some Terraform best practices?
+Best practices include using modules, keeping state remote and secure, version-controlling `.tf` files, using `terraform fmt` and `terraform validate`, limiting hardcoded values, and testing changes with `terraform plan` before `apply`.
