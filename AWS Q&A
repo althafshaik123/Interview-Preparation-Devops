@@ -1,0 +1,78 @@
+# AWS Interview Questions and Answers (0-5 Years Experience)
+
+This file contains 25 real-world AWS interview questions and answers for candidates with 0-5 years of experience.
+
+## 1. What is AWS?
+AWS (Amazon Web Services) is a cloud services platform that offers compute, storage, database, networking, analytics, machine learning, and DevOps services on demand.
+
+## 2. What are EC2 instances?
+EC2 (Elastic Compute Cloud) instances are virtual servers in the AWS cloud that can be launched with different sizes, operating systems, and configurations.
+
+## 3. What is S3?
+S3 (Simple Storage Service) is an object storage service that stores data as objects within buckets and provides high durability and scalability.
+
+## 4. What is the difference between S3 and EBS?
+S3 is object storage for files and backups, while EBS (Elastic Block Store) is block storage attached to EC2 instances for OS disks and persistent volumes.
+
+## 5. What is IAM?
+IAM (Identity and Access Management) is a service that controls users, groups, roles, and permissions to securely manage AWS resources.
+
+## 6. What is a VPC?
+A VPC (Virtual Private Cloud) is a logically isolated network in AWS where you can launch resources with custom IP addressing, subnets, routes, and security.
+
+## 7. What is an availability zone?
+An availability zone is a physically separate datacenter within an AWS region. Using multiple availability zones improves fault tolerance and resilience.
+
+## 8. What is AWS Lambda?
+AWS Lambda is a serverless compute service that runs code in response to events without provisioning or managing servers.
+
+## 9. What is CloudFormation?
+CloudFormation is an infrastructure-as-code service that lets you define AWS resources in templates and provision them in a repeatable way.
+
+## 10. What is Auto Scaling?
+Auto Scaling automatically adjusts the number of EC2 instances based on demand, schedules, or health checks to maintain performance and control costs.
+
+## 11. What is Elastic Load Balancing (ELB)?
+ELB distributes incoming traffic across targets such as EC2 instances, containers, and IP addresses to improve availability and fault tolerance.
+
+## 12. What is Route 53?
+Route 53 is AWS DNS and traffic management service that routes user requests to application endpoints and provides domain registration.
+
+## 13. What is AWS CloudWatch?
+CloudWatch monitors AWS resources and applications, collecting logs, metrics, and events to help visualize performance and trigger alerts.
+
+## 14. What is AWS CloudTrail?
+CloudTrail records API calls and user activity across AWS accounts, providing an audit trail for compliance and security analysis.
+
+## 15. What is an AWS security group?
+A security group acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic based on rules.
+
+## 16. What is AWS RDS?
+RDS (Relational Database Service) is a managed database service for engines like MySQL, PostgreSQL, SQL Server, Oracle, and Amazon Aurora.
+
+## 17. What is Amazon ECS?
+ECS (Elastic Container Service) is a container orchestration service that runs Docker containers on AWS using EC2 or Fargate.
+
+## 18. What is Amazon EKS?
+EKS (Elastic Kubernetes Service) is a managed Kubernetes service that simplifies running Kubernetes clusters on AWS.
+
+## 19. What is AWS Elastic Beanstalk?
+Elastic Beanstalk is a platform-as-a-service for deploying and managing web applications while AWS handles provisioning, load balancing, scaling, and health monitoring.
+
+## 20. What is AWS SSM?
+AWS Systems Manager (SSM) provides operational tooling to manage EC2 and on-premises servers, including run commands, patching, parameter store, and automation.
+
+## 21. What is AWS SNS?
+SNS (Simple Notification Service) is a pub/sub messaging service for sending notifications to subscribers over email, SMS, HTTP/S, and Lambda.
+
+## 22. What is AWS SQS?
+SQS (Simple Queue Service) is a fully managed message queue service that decouples application components and ensures reliable message delivery.
+
+## 23. What is AWS CodePipeline?
+CodePipeline is a CI/CD service that automates build, test, and deployment workflows using defined stages and actions.
+
+## 24. What is AWS CloudFront?
+CloudFront is a content delivery network (CDN) that caches content at edge locations to reduce latency and improve performance for global users.
+
+## 25. What are some AWS best practices?
+Best practices include using IAM least privilege, enabling MFA, automating infrastructure with templates, monitoring with CloudWatch, using multiple availability zones, encrypting data at rest and in transit, and tagging resources for cost allocation.
