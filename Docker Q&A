@@ -1,0 +1,78 @@
+# Docker Interview Questions and Answers (0-5 Years Experience)
+
+This file contains 25 real-world Docker interview questions and answers for candidates with 0-5 years of experience.
+
+## 1. What is Docker?
+Docker is a platform for building, shipping, and running containerized applications using lightweight, portable containers that package code and dependencies together.
+
+## 2. What is a Docker container?
+A Docker container is a runtime instance of a Docker image that includes the application and its dependencies isolated from the host system.
+
+## 3. What is a Docker image?
+A Docker image is a read-only template that contains a filesystem and application configuration used to create containers.
+
+## 4. What is Dockerfile?
+A Dockerfile is a text file with instructions for building a Docker image, such as `FROM`, `RUN`, `COPY`, and `CMD`.
+
+## 5. How do you build a Docker image?
+Use `docker build -t <image-name> .` in the directory with the Dockerfile to build an image.
+
+## 6. How do you run a Docker container?
+Use `docker run <image-name>` to start a container from an image, optionally adding flags like `-d`, `-p`, and `--name`.
+
+## 7. What is the difference between `docker run` and `docker start`?
+`docker run` creates and starts a new container, while `docker start` restarts an existing stopped container.
+
+## 8. What is the purpose of `docker ps`?
+`docker ps` lists currently running containers. Add `-a` to list all containers, including stopped ones.
+
+## 9. How do you expose ports from a container?
+Use `-p host_port:container_port` with `docker run` to map container ports to host ports.
+
+## 10. What is a Docker volume?
+A Docker volume is a persistent storage mechanism for containers that exists outside the container filesystem and survives container restarts.
+
+## 11. What is the difference between a volume and a bind mount?
+A volume is managed by Docker and is portable, while a bind mount maps a host directory directly into a container.
+
+## 12. What is Docker Compose?
+Docker Compose is a tool for defining and running multi-container applications using a YAML file called `docker-compose.yml`.
+
+## 13. How do you start services with Docker Compose?
+Run `docker compose up` to create and start containers defined in `docker-compose.yml`.
+
+## 14. What is the `CMD` instruction in a Dockerfile?
+`CMD` defines the default command that runs when a container starts from the built image.
+
+## 15. What does the `ENTRYPOINT` instruction do?
+`ENTRYPOINT` sets a fixed command for the container, allowing arguments passed at runtime to be appended.
+
+## 16. How do you reduce Docker image size?
+Reduce image size by using smaller base images, combining `RUN` steps, cleaning package caches, and removing unnecessary files.
+
+## 17. What is a layered filesystem in Docker?
+Docker images are built in layers, with each Dockerfile instruction creating a new layer that can be cached and reused.
+
+## 18. What is `docker network` used for?
+`docker network` manages container networking, allowing containers to communicate securely across custom networks.
+
+## 19. What are Docker tags?
+Tags are labels added to image names to identify versions, such as `myapp:latest` or `myapp:v1.0`.
+
+## 20. How do you remove unused Docker resources?
+Use `docker system prune` to remove stopped containers, unused networks, dangling images, and build cache.
+
+## 21. What is Docker Hub?
+Docker Hub is a cloud registry for storing, sharing, and distributing Docker images.
+
+## 22. How do you push an image to Docker Hub?
+Use `docker push <username>/<image-name>:<tag>` after logging in with `docker login`.
+
+## 23. What is the difference between `COPY` and `ADD` in Dockerfile?
+`COPY` copies files from the build context, while `ADD` can also extract archives and fetch remote URLs, but `COPY` is preferred for simplicity.
+
+## 24. How do you inspect a running container?
+Use `docker inspect <container-id>` to view detailed metadata and configuration of a container.
+
+## 25. What are some Docker best practices?
+Best practices include using official base images, minimizing image layers, using `.dockerignore`, keeping secrets out of images, and using health checks and resource limits.
