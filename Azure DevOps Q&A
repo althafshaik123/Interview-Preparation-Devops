@@ -1,0 +1,78 @@
+# Azure DevOps Interview Questions and Answers (0-5 Years Experience)
+
+This file contains 25 real-world Azure DevOps interview questions and answers for candidates with 0-5 years of experience.
+
+## 1. What is Azure DevOps?
+Azure DevOps is a Microsoft platform for DevOps practices that includes services such as Azure Repos, Azure Pipelines, Azure Boards, Azure Artifacts, and Azure Test Plans for planning, development, delivery, and operations.
+
+## 2. What is the difference between Azure DevOps and Azure DevOps Server?
+Azure DevOps is the cloud-hosted SaaS version, while Azure DevOps Server is the on-premises version that organizations can install in their own data center.
+
+## 3. What is Azure Pipelines?
+Azure Pipelines is a CI/CD service in Azure DevOps that automates build, test, and deployment workflows for any application on any platform.
+
+## 4. What is the YAML pipeline in Azure DevOps?
+A YAML pipeline is a pipeline definition stored as code in a `azure-pipelines.yml` file, enabling version control, reuse, and easier pipeline management.
+
+## 5. What are Azure Repos?
+Azure Repos provides Git repositories and Team Foundation Version Control (TFVC) for source control, enabling branching, pull requests, and code review.
+
+## 6. What is Azure Boards?
+Azure Boards is a work tracking tool that offers Kanban boards, backlogs, team dashboards, and reporting to manage work items and track progress.
+
+## 7. What is an agent pool in Azure Pipelines?
+An agent pool is a group of build or deployment agents that can run pipeline jobs. It allows sharing agents across projects and controlling agent capacity.
+
+## 8. What is the difference between Microsoft-hosted and self-hosted agents?
+Microsoft-hosted agents are managed by Azure DevOps and run in the cloud. Self-hosted agents are machines that you configure and manage to run pipeline jobs.
+
+## 9. How do Azure Artifacts work?
+Azure Artifacts is a package management solution in Azure DevOps that stores and shares packages such as NuGet, npm, Maven, Python, and Universal packages.
+
+## 10. What is a build pipeline?
+A build pipeline compiles code, runs automated tests, and produces artifacts. It validates code quality before deployment.
+
+## 11. What is a release pipeline?
+A release pipeline deploys build artifacts to environments such as dev, test, and production. It can include approvals, gates, and deployment strategies.
+
+## 12. What are pipeline stages?
+Stages are logical divisions in a pipeline representing phases like build, test, and deploy. They help control flow, approvals, and environment targeting.
+
+## 13. What is a variable group?
+A variable group stores pipeline variables centrally so multiple pipelines can reuse the same values, including secrets from Azure Key Vault.
+
+## 14. How do you secure secrets in Azure Pipelines?
+Use Azure Key Vault integration, secure pipeline variables marked as secret, and avoid storing secrets in code or public variables.
+
+## 15. What is Infrastructure as Code (IaC) in Azure DevOps?
+IaC is the practice of defining infrastructure using code and configuration files, often using tools like ARM templates, Bicep, Terraform, or Azure CLI in pipelines.
+
+## 16. What is an Azure DevOps artifact?
+An artifact is a published output from a build pipeline that can be consumed by deployment pipelines or shared across teams.
+
+## 17. What is branching strategy in Azure Repos?
+A branching strategy defines how branches are created and merged, such as Git Flow, GitHub Flow, trunk-based development, or feature branching.
+
+## 18. How do you implement CI/CD using Azure DevOps?
+Implement CI/CD by creating build pipelines for continuous integration, publishing artifacts, and release or deployment pipelines for continuous delivery/deployment.
+
+## 19. What is a pull request in Azure Repos?
+A pull request is a code review workflow where changes from one branch are proposed to be merged into another branch with approvals and validation checks.
+
+## 20. How can you run tests in Azure Pipelines?
+Use tasks such as `DotNetCoreCLI`, `VSTest`, `npm test`, or custom scripts to execute unit, integration, and UI tests during pipeline runs.
+
+## 21. What is YAML templates reuse in Azure Pipelines?
+YAML templates let you define reusable sections of pipeline logic and include them in multiple pipelines to reduce duplication.
+
+## 22. What are pipeline triggers?
+Pipeline triggers start pipeline runs automatically when changes happen in a repository, when another pipeline completes, or on scheduled times.
+
+## 23. What is artifact staging directory?
+Artifact staging directory is a folder in a build pipeline where compiled binaries and files are collected before publishing them as artifacts.
+
+## 24. How do you monitor Azure DevOps pipelines?
+Monitor pipelines using Azure DevOps pipeline dashboards, logs, build history, test results, and alerts for failures or unstable runs.
+
+## 25. What are some Azure DevOps best practices?
+Best practices include using YAML pipelines, applying branch policies, keeping infrastructure as code, enabling code reviews, securing secrets, using environment approvals, and automating tests and deployments.
